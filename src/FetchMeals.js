@@ -27,6 +27,7 @@ const editMeal = (mealId, title, setMyMeal, setTitle,  setEditing) =>{
     })
 
 }
+
 const deleteMeal = (_id, setMyMeal) =>{
     axios.post(`https://meal-plan-backend-62hc.onrender.com/deleteMeal`, {_id})
     .then((data) =>{
